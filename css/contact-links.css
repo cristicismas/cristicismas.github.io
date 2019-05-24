@@ -22,7 +22,8 @@
 }
 
 #contact-links #github:hover {
-    background-color: #333;
+    background-color: rgb(235, 235, 235);
+    color: #222;
 }
 
 #contact-links #linkedin:hover {
