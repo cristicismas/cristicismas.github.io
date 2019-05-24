@@ -1,0 +1,34 @@
+#contact-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#contact-links a {
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 20px;
+    transition: all .2s;
+    font-weight: bold;
+}
+
+#contact-links #facebook:hover {
+    background-color: rgb(0, 102, 255);
+}
+
+#contact-links #github:hover {
+    background-color: #333;
+}
+
+#contact-links #linkedin:hover {
+    background-color: rgb(20, 161, 255);
+}
+
+#contact-links #gmail:hover {
+    background-color: rgb(248, 48, 34);
+}

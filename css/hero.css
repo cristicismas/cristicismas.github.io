@@ -1,0 +1,32 @@
+#hero {
+    text-align: center;
+}
+
+#hero #profile-image {
+    border: 2px solid #eee;
+    border-radius: 100%;
+    margin: 100px auto 20px;
+    display: block;
+}
+
+#hero #name {
+    font-size: 45px;
+    color: #f5f5f5;
+    margin: 0;
+}
+
+#hero #caption {
+    margin-top: 0px;
+    color: #ddd;
+    margin-bottom: 60px;
+}
+
+#hero .description {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+#hero #scrolldown-arrow {
+    cursor: pointer;
+    display: inline;
+}
