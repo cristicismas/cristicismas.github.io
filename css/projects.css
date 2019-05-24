@@ -1,5 +1,5 @@
 #projects {
-    margin-top: 150px;
+    padding: 150px;
 }
 
 #projects .title {
@@ -15,8 +15,12 @@
     flex-direction: row-reverse;
 }
 
-#projects .project > * {
-    padding: 150px;
+#projects .project {
+    margin: 150px;
+}
+
+#projects .project .mockup {
+    margin: 0 50px;
 }
 
 #projects .project .info {
@@ -26,10 +30,13 @@
 
 #projects .project .links {
     margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #projects .project .links a {
-    margin-right: 30px;
+    margin: 10px 15px;
     border-radius: 3px;
     padding: 10px 20px;
 }
@@ -43,4 +50,48 @@
     border: 2px solid #111;
     background-color: #efefef;
     color: #111;
+}
+
+@media only screen and (max-width: 1650px) {
+    #projects {
+        padding: 100px;
+    }
+
+    #projects .project {
+        margin: 150px 0;
+        justify-content: space-between;
+    }
+
+    #projects .project .info {
+        max-width: 100%;
+    }
+
+    #projects .project .mockup {
+        transform: scale(.7);
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    #projects .project,
+    #projects .project:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    #projects .project .mockup {
+        transform: scale(1);
+        margin: auto;
+        width: auto;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #projects {
+        padding: 70px;
+    }
+
+    #projects .project .mockup {
+        width: 100%;
+        height: auto;
+    }
 }

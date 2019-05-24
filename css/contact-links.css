@@ -33,3 +33,10 @@
 #contact-links #gmail:hover {
     background-color: rgb(248, 48, 34);
 }
+
+@media only screen and (max-width: 1000px) {
+    #contact-links a {
+        padding: 10px;
+        font-size: 15px;
+    }
+}

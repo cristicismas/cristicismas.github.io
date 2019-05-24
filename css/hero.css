@@ -18,6 +18,7 @@
 #hero .description {
     font-size: 30px;
     line-height: 35px;
+    margin: 30px auto;
 }
 
 #hero #scrolldown-arrow {
@@ -27,4 +28,52 @@
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media only screen and (max-height: 910px) {
+    #hero #profile-image {
+        height: 240px;
+        width: 240px;
+    }
+
+    #hero #caption {
+        font-size: 15px;
+    }
+
+    #hero .title {
+        font-size: 35px;
+    }
+
+    #hero .description {
+        font-size: 25px;
+    }
+
+    #hero #scrolldown-arrow {
+        position: static;
+        bottom: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #hero {
+        margin-top: -50px;
+    }
+    
+    #hero #profile-image {
+        height: 240px;
+        width: 240px;
+    }
+
+    #hero #caption {
+        font-size: 15px;
+    }
+
+    #hero .title {
+        font-size: 35px;
+    }
+
+    #hero .description {
+        font-size: 25px;
+        max-width: 70%;
+    }
 }

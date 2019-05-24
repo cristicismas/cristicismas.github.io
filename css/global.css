@@ -28,3 +28,16 @@ hr {
     color: #f5f5f5;
     margin: 0;
 }
+
+@media only screen and (max-width: 700px) {
+    hr {
+        width: 350px;
+        height: 3px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    hr {
+        width: 250px;
+    }
+}
