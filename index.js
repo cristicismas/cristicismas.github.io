@@ -7,4 +7,14 @@ scrolldownArrow.addEventListener('click', function(e) {
         behavior: 'smooth',
         block: 'start'
     });
-})
+});
+
+
+AOS.init({
+    offset: 150,
+    duration: 600,
+    disable: function() {
+        return /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+    }
+});
+  
