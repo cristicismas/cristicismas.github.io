@@ -18,3 +18,11 @@ AOS.init({
     }
 });
   
+
+const options = {
+    strings: ['Hi!^1000 I am a<br />web developer.^1500\n<br /><br />I make useful web applications,<br />that grow businesses and bring new leads.'],
+    typeSpeed: 25,
+    showCursor: false
+}
+
+const typed = new Typed('.description', options);
