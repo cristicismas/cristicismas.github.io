@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="css/contact-links.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 
 <body>
     <nav id="contact-links">
+        <caption>contact</caption>
         <a id="facebook" target="_blank" href="https://www.facebook.com/cristi.cismas.9">f</a>
         <a id="github" target="_blank" href="https://github.com/cristicismas">gh</a>
         <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/cristi-cismas-409482151/">in</a>
@@ -24,7 +26,7 @@
     <section id="hero">
         <img id="profile-image" src="images/profile-image.jpg" alt="profile image">
 
-        <h1 id="name">Cristi Cismas</h1>
+        <h1 class="title">Cristi Cismas</h1>
         <h3 id="caption">Web Developer</h3>
 
         <p class="description">Hi! I am a<br />web developer.</p>
@@ -35,6 +37,57 @@
                 stroke="#eee" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#eee">
                 <polyline points="7 13 12 18 17 13" />
                 <polyline points="7 7 12 12 17 7" /> </svg>
+        </div>
+    </section>
+
+    <hr />
+
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+
+        <div class="project">
+            <div class="info">
+                <h3>Weathery</h3>
+                <p class="description">
+                    Weather web application built with ReactJS, NodeJS and Express, that uses the GoogleMaps API and ChartJS to display data in a modern, useful format.
+                </p>
+            
+                <div class="links">
+                    <a class="code-link" href="https://github.com/cristicismas/weathery">View Code</a>
+                    <a class="website-link" href="https://cristicismas.github.io/weathery">Visit Website</a>
+                </div>
+            </div>
+            <img class="mockup" src="images/weathery-mockup.png" alt="Weathery Project" width="500px" height="350px">
+        </div>
+
+        <div class="project">
+            <div class="info">
+                <h3>ColourMed Design</h3>
+                <p class="description">
+                    E-commerce website which includes a fully functional Content Management System (CMS) built from scratch with Nodejs and ExpressJS. This project uses ReactJS, Redux, and MongoDB.
+                </p>
+            
+                <div class="links">
+                    <a class="code-link" href="https://github.com/cristicismas/colourmed">View Code</a>
+                    <a class="website-link" href="https://colormedical.ro">Visit Website</a>
+                </div>
+            </div>
+            <img class="mockup" src="images/colormed-mockup.png" alt="Weathery Project" width="250px" height="500px">
+        </div>
+
+        <div class="project">
+            <div class="info">
+                <h3>ProFotoVideo</h3>
+                <p class="description">
+                    Professional videography and photography website build with Django that incorporates multiple plugins to create useful content for all users.
+                </p>
+            
+                <div class="links">
+                    <a class="code-link" href="https://github.com/cristicismas/profotovideo">View Code</a>
+                    <a class="website-link" href="https://www.profotovideo.ro">Visit Website</a>
+                </div>
+            </div>
+            <img class="mockup" src="images/profotovideo-mockup.png" alt="Weathery Project" width="500px" height="350px">
         </div>
     </section>
 

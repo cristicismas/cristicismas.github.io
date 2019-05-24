@@ -9,12 +9,6 @@
     display: block;
 }
 
-#hero #name {
-    font-size: 45px;
-    color: #f5f5f5;
-    margin: 0;
-}
-
 #hero #caption {
     margin-top: 0px;
     color: #ddd;
@@ -29,4 +23,8 @@
 #hero #scrolldown-arrow {
     cursor: pointer;
     display: inline;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
