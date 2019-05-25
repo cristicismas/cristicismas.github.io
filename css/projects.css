@@ -11,7 +11,7 @@
     justify-content: space-evenly;
 }
 
-#projects .project:nth-child(odd) {
+#projects .project:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
