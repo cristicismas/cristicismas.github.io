@@ -1,6 +1,7 @@
 #contact-links {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     position: fixed;
     text-align: center;
     left: 0;
@@ -10,11 +11,33 @@
     transition: all .5s;
 }
 
+#contact-links-bottom {
+    text-align: center;
+    margin-top: -50px;
+}
+
+#contact-links-bottom .title {
+    margin-bottom: 90px;
+}
+
+#contact-links-bottom .links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all .5s;
+    margin-bottom: 60px;
+}
+
+#contact-links-bottom a {
+    min-width: 30px;
+}
+
 #contact-links:hover {
     opacity: 1;
 }
 
-#contact-links a {
+#contact-links a,
+#contact-links-bottom a {
     padding: 20px;
     background-color: #111;
     border: 1px solid #eee;
@@ -23,20 +46,24 @@
     font-weight: bold;
 }
 
-#contact-links #facebook:hover {
+#contact-links #facebook:hover,
+#contact-links-bottom #facebook:hover {
     background-color: rgb(0, 102, 255);
 }
 
-#contact-links #github:hover {
+#contact-links #github:hover,
+#contact-links-bottom #github:hover {
     background-color: rgb(235, 235, 235);
     color: #222;
 }
 
-#contact-links #linkedin:hover {
+#contact-links #linkedin:hover,
+#contact-links-bottom #linkedin:hover {
     background-color: rgb(20, 161, 255);
 }
 
-#contact-links #gmail:hover {
+#contact-links #gmail:hover,
+#contact-links-bottom #gmail:hover {
     background-color: rgb(248, 48, 34);
 }
 

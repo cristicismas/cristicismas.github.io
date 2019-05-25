@@ -7,7 +7,7 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-body > section {
+body > #hero {
     min-height: 100vh;
 }
 
