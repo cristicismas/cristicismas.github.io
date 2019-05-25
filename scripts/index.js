@@ -40,7 +40,7 @@ contactLinks = document.getElementById('contact-links');
 contactLinksBottom = document.getElementById('contact-links-bottom');
 
 window.onscroll = function(e) {
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    if ((window.innerHeight + window.scrollY + window.innerHeight / 10) >= document.body.offsetHeight) {
         contactLinks.style.opacity = 0;
         contactLinks.style.left = '-50px';
     } else {

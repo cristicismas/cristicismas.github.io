@@ -1,5 +1,7 @@
 #hero {
     text-align: center;
+    background-color: #111;
+    padding-top: 100px;
 }
 
 #hero #profile-image {

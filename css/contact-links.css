@@ -14,6 +14,8 @@
 #contact-links-bottom {
     text-align: center;
     margin-top: -50px;
+    background-color: #111;
+    padding: 150px;
 }
 
 #contact-links-bottom .title {
