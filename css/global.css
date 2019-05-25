@@ -38,6 +38,6 @@ hr {
 
 @media only screen and (max-width: 500px) {
     hr {
-        width: 250px;
+        width: 180px;
     }
 }
