@@ -4,6 +4,11 @@
     padding-top: 100px;
 }
 
+#hero * {
+    z-index: 100;
+    position: relative;
+}
+
 #hero #profile-image {
     border: 2px solid #eee;
     border-radius: 100%;
