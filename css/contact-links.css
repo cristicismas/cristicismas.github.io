@@ -9,6 +9,7 @@
     transform: translateY(-50%);
     opacity: .8;
     transition: all .5s;
+    z-index: 10;
 }
 
 #contact-links-bottom {
