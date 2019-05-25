@@ -6,6 +6,12 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    opacity: .8;
+    transition: all .5s;
+}
+
+#contact-links:hover {
+    opacity: 1;
 }
 
 #contact-links a {
@@ -13,7 +19,7 @@
     background-color: #111;
     border: 1px solid #eee;
     font-size: 20px;
-    transition: all .2s;
+    transition: all .4s;
     font-weight: bold;
 }
 
