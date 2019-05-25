@@ -2,7 +2,7 @@
 
 scrolldownArrow = document.getElementById('scrolldown-arrow');
 
-scrolldownArrow.addEventListener('click', function(e) {
+scrolldownArrow.addEventListener('click', function (e) {
     e.preventDefault();
 
     document.getElementById('projects').scrollIntoView({
@@ -17,11 +17,11 @@ scrolldownArrow.addEventListener('click', function(e) {
 AOS.init({
     offset: 150,
     duration: 600,
-    disable: function() {
+    disable: function () {
         return /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
     }
 });
-  
+
 
 // Typed.js
 
@@ -39,8 +39,22 @@ const typed = new Typed('.description', typedOptions);
 contactLinks = document.getElementById('contact-links');
 contactLinksBottom = document.getElementById('contact-links-bottom');
 
-window.onscroll = function(e) {
-    if ((window.innerHeight + window.scrollY + window.innerHeight / 10) >= document.body.offsetHeight) {
+const hideOffset = 300;
+
+function isElementInViewport(el, offset) {
+    var rect = el.getBoundingClientRect();
+
+
+    return (
+        rect.bottom >= 0 && 
+        rect.right >= 0 && 
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) - offset && 
+        rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+window.onscroll = function (e) {
+    if (isElementInViewport(contactLinksBottom, hideOffset)) {
         contactLinks.style.opacity = 0;
         contactLinks.style.left = '-50px';
     } else {
