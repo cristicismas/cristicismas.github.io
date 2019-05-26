@@ -18,7 +18,8 @@ AOS.init({
     offset: 150,
     duration: 600,
     disable: function () {
-        return /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+        // Disable for bots and small screens to avoid jank.
+        return /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) || window.innerWidth < 700;
     }
 });
 
