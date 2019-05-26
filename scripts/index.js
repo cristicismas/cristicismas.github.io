@@ -69,10 +69,5 @@ window.onscroll = function (e) {
 
 // Particles
 
-particlesJS.load('left', 'scripts/particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded');
-});
-
-particlesJS.load('right', 'scripts/particlesjs-config.json', function() {
-    console.log('callback - particles.js config loaded');
-});
+particlesJS.load('left', 'scripts/particlesjs-config.json');
+particlesJS.load('right', 'scripts/particlesjs-config.json');
