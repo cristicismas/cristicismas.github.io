@@ -93,5 +93,7 @@
 
     #hero #profile-image {
         margin-top: 20px;
+        width: 180px;
+        height: 180px;
     }
 }
