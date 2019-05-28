@@ -28,7 +28,7 @@ AOS.init({
 
 const typedOptions = {
     strings: ['Hi!^500 I am a<br />web developer.^500\n<br /><br />I make useful web applications,<br />that grow businesses and bring new leads.'],
-    typeSpeed: 25,
+    typeSpeed: 15,
     showCursor: false
 }
 
