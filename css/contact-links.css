@@ -83,6 +83,10 @@
 }
 
 @media only screen and (max-width: 570px) {
+    #contact-links {
+        display: none;
+    }
+    
     #contact-links-bottom {
         padding: 50px;
     }
