@@ -52,6 +52,8 @@
     font-size: 20px;
     transition: all .4s;
     font-weight: bold;
+    height: 70px;
+    width: 70px;
 }
 
 #contact-links #facebook:hover,
@@ -79,6 +81,13 @@
     #contact-links img,
     #contact-links-bottom img {
         padding: 5px;
+    }
+
+
+    #contact-links a,
+    #contact-links-bottom a {
+        width: 60px;
+        height: 60px;
     }
 }
 
