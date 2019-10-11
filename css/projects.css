@@ -126,6 +126,8 @@
     }
 
     #projects .project .links a {
+        width: 130px;
+        text-align: center;
         font-size: 22px;
         padding: 7px 40px 7px 10px;
         box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
@@ -147,5 +149,9 @@
     #projects .project .links a:hover .icon {
         right: 5px;
         top: 10px;
+    }
+
+    #projects .project .links a.code-link .icon {
+        right: 15px;
     }
 }
