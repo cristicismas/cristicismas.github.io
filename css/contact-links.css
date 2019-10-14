@@ -48,12 +48,20 @@
 #contact-links a,
 #contact-links-bottom a {
     background-color: #111;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     font-size: 20px;
     transition: all .4s;
     font-weight: bold;
     height: 70px;
     width: 70px;
+}
+
+#contact-links a:not(:first-child) {
+    border-top: none;
+}
+
+#contact-links-bottom a:not(:first-child) {
+    border-left: none;
 }
 
 #contact-links #facebook:hover,
