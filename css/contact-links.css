@@ -67,22 +67,26 @@
 #contact-links #facebook:hover,
 #contact-links-bottom #facebook:hover {
     background-color: rgb(0, 102, 255);
+    border-color: rgb(0, 102, 255);
 }
 
 #contact-links #github:hover,
 #contact-links-bottom #github:hover {
     background-color: rgb(95, 0, 204);
+    border-color: rgb(95, 0, 204);
     color: #222;
 }
 
 #contact-links #linkedin:hover,
 #contact-links-bottom #linkedin:hover {
     background-color: rgb(20, 161, 255);
+    border-color: rgb(20, 161, 255);
 }
 
 #contact-links #gmail:hover,
 #contact-links-bottom #gmail:hover {
     background-color: rgb(248, 48, 34);
+    border-color: rgb(248, 48, 34);
 }
 
 @media only screen and (max-width: 1000px) {
