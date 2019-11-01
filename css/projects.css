@@ -118,6 +118,10 @@
         margin-top: 70px;
     }
 
+    #projects .project .project-title {
+        text-align: center;
+    }
+
     #projects .project .info {
         max-width: 70%;
         margin: auto;
