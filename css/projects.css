@@ -19,8 +19,18 @@
     margin: 150px;
 }
 
-#projects .project .mockup {
+#projects .project .project-image {
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.5);
     margin: 0 50px;
+    width: auto;
+    height: 400px;
+    display: block;
+    transition: all .5s;
+}
+
+#projects .project .project-image:hover {
+    filter: grayscale(100%);
 }
 
 #projects .project .info {
@@ -72,9 +82,19 @@
     right: 13px;
 }
 
+@media only screen and (max-width: 2000px) {
+    #projects .project {
+        margin: 50px;
+    }
+
+    #projects .project .project-image {
+        height: 350px;
+    }
+}
+
 @media only screen and (max-width: 1650px) {
     #projects {
-        padding: 100px;
+        padding: 130px;
     }
 
     #projects .project {
@@ -83,25 +103,38 @@
     }
 
     #projects .project .info {
-        max-width: 100%;
+        max-width: 70%;
     }
 
-    #projects .project .mockup {
-        transform: scale(.7);
+    #projects .project .project-image {
+        height: 300px;
     }
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1370px) {
     #projects .project,
     #projects .project:nth-of-type(even) {
         flex-direction: column-reverse;
+        margin-top: 70px;
     }
 
-    #projects .project .mockup {
-        transform: scale(1);
+    #projects .project .info {
+        max-width: 70%;
         margin: auto;
-        width: auto;
-        height: 300px;
+    }
+
+    #projects .project .project-image {
+        margin: 0 auto 40px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #projects {
+        padding: 80px;
+    }
+
+    #projects .project .info {
+        max-width: 90%;
     }
 }
 
@@ -110,13 +143,21 @@
         padding: 70px;
     }
 
-    #projects .project .mockup {
+    #projects .title {
+        margin: 50px auto 70px;
+    }
+
+    #projects .project .project-image {
         width: 100%;
         height: auto;
     }
 }
 
 @media only screen and (max-width: 580px) {
+    #projects {
+        padding: 30px;
+    }
+
     #projects .project {
         margin: 50px 0;
     }
