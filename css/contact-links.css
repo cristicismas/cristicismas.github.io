@@ -48,7 +48,6 @@
 #contact-links a,
 #contact-links-bottom a {
     background-color: #111;
-    border: 2px solid #333;
     font-size: 20px;
     transition: all .4s;
     font-weight: bold;
