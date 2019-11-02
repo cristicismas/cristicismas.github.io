@@ -15,7 +15,7 @@ scrolldownArrow.addEventListener('click', function (e) {
 // AOS
 
 AOS.init({
-    offset: 150,
+    offset: 50,
     duration: 600,
     disable: function () {
         // Disable for bots and small screens to avoid jank.
