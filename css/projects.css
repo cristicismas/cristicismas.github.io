@@ -26,11 +26,13 @@
     width: auto;
     height: 400px;
     display: block;
-    transition: all .5s;
+    transition: all .4s;
 }
 
 #projects .project .project-image:hover {
     filter: grayscale(100%);
+    box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.5);
+    transform: scale(1.02);
 }
 
 #projects .project .info {
@@ -154,6 +156,12 @@
     #projects .project .project-image {
         width: 100%;
         height: auto;
+    }
+
+    #projects .project .project-image:hover {
+        filter: none;
+        box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.5);
+        transform: scale(1);
     }
 }
 
