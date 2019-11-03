@@ -30,7 +30,6 @@
 }
 
 #projects .project .project-image:hover {
-    filter: grayscale(100%);
     box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.5);
     transform: scale(1.02);
 }
@@ -50,18 +49,18 @@
 #projects .project .links a {
     margin: 10px 15px;
     border-radius: 3px;
-    padding: 10px 20px;
+    padding: 10px 55px 10px 20px;
     position: relative;
+    padding-right: 55px;
+    box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.5);
     transition: all .4s ease;
 }
 
 #projects .project .links .code-link {
-    border: 1px solid #777;
     background-color: #111;
 }
 
 #projects .project .links .website-link {
-    border: 2px solid #444;
     background-color: #efefef;
     color: #111;
 }
@@ -69,19 +68,17 @@
 #projects .project .links a .icon {
     position: absolute;
     top: 15px;
-    opacity: 0;
-    right: 15px;
+    opacity: .9;
+    right: 13px;
     transition: all .4s ease;
 }
 
 #projects .project .links a:hover {
-    padding-right: 55px;
-    box-shadow: 0px 16px 30px 0px rgba(0,0,0,0.5);
+    transform: scale(1.1);
 }
 
 #projects .project .links a:hover .icon {
-    opacity: .9;
-    right: 13px;
+    transform: rotate(15deg);
 }
 
 @media only screen and (max-width: 2000px) {
@@ -134,7 +131,7 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
     #projects {
         padding: 80px;
     }
@@ -146,11 +143,15 @@
 
 @media only screen and (max-width: 700px) {
     #projects {
-        padding: 70px;
+        padding: 30px;
     }
 
     #projects .title {
         margin: 50px auto 70px;
+    }
+
+    #projects .project {
+        margin: 50px 0;
     }
 
     #projects .project .project-image {
@@ -159,19 +160,8 @@
     }
 
     #projects .project .project-image:hover {
-        filter: none;
         box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.5);
         transform: scale(1);
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    #projects {
-        padding: 30px;
-    }
-
-    #projects .project {
-        margin: 50px 0;
     }
 
     #projects .project .info {
@@ -195,13 +185,11 @@
     }
 
     #projects .project .links a:hover {
-        padding-right: 40px;
-        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3);
+        transform: scale(1);
     }
 
     #projects .project .links a:hover .icon {
-        right: 5px;
-        top: 10px;
+        transform: rotate(0deg) scale(.8);
     }
 
     #projects .project .links a.code-link .icon {
