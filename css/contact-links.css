@@ -7,7 +7,6 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    opacity: .8;
     transition: all .5s;
     z-index: 200;
 }
@@ -39,10 +38,6 @@
 
 #contact-links-bottom a {
     min-width: 30px;
-}
-
-#contact-links:hover {
-    opacity: 1;
 }
 
 #contact-links a,
