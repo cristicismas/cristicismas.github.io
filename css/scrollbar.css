@@ -1,13 +1,15 @@
+* {
+    scrollbar-color: #333 #111;
+}
+
 ::-webkit-scrollbar {
     height: 8px;
-    width: 8px;
+    width: 12px;
     background: #111;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #0e4291;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
+    background: #333;
 }
 
 ::-webkit-scrollbar-corner {
