@@ -16,6 +16,17 @@
     display: block;
 }
 
+#hero #cv-link {
+    background-color: #191919;
+    padding: 10px;
+    position: block;
+    transition: all .3s;
+}
+
+#hero #cv-link:hover {
+    background-color: #222;
+}
+
 #hero #caption {
     margin-top: 0px;
     color: #ddd;
@@ -50,7 +61,7 @@
     }
 }
 
-@media only screen and (max-height: 1000px) {
+@media only screen and (max-height: 1100px) {
     #hero #profile-image {
         height: 240px;
         width: 240px;
