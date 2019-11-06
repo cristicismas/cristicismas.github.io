@@ -35,6 +35,19 @@
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
+    animation: floatUpDown infinite 1.5s ease-in-out;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translate(-50%, 0px);
+    }
+    50% {
+        transform: translate(-50%, 20px);
+    }
+    100% {
+        transform: translate(-50%, 0px);
+    }
 }
 
 @media only screen and (max-height: 1000px) {
