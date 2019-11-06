@@ -60,7 +60,7 @@ window.onscroll = function (e) {
         contactLinks.style.left = '-50px';
     } else {
         if (contactLinks.style.opacity == 0) {
-            contactLinks.style.opacity = 0.8;
+            contactLinks.style.opacity = 1;
             contactLinks.style.left = '0px';
         }
     }
