@@ -60,6 +60,7 @@
 
 #projects .project .links .code-link {
     background-color: #111;
+    border: 1px solid white;
 }
 
 #projects .project .links .website-link {
@@ -73,10 +74,6 @@
     opacity: .9;
     right: 13px;
     transition: all .4s ease;
-}
-
-#projects .project .links a:hover {
-    transform: scale(1);
 }
 
 #projects .project .links a:hover .icon {
