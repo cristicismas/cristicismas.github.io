@@ -111,7 +111,7 @@
 
 @media only screen and (max-width: 1370px) {
     #projects .project,
-    #projects .project:nth-of-type(even) {
+    #projects .project:nth-of-type(odd) {
         flex-direction: column-reverse;
         margin-top: 70px;
     }
