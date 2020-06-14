@@ -48,6 +48,7 @@
 }
 
 #projects .project .links a {
+    transform: scale(.9);
     margin: 10px 15px;
     border-radius: 3px;
     padding: 10px 55px 10px 20px;
@@ -58,13 +59,17 @@
     transition: all .4s ease;
 }
 
+#projects .project .links a:hover {
+    transform: scale(1);
+}
+
 #projects .project .links .code-link {
     background-color: #111;
     border: 2px solid white;
 }
 
 #projects .project .links .code-link:hover {
-    background-color: #292929;
+    background-color: #222;
 }
 
 #projects .project .links .website-link {
