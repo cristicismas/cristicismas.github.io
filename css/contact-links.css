@@ -40,11 +40,46 @@
     min-width: 30px;
 }
 
-#contact-links a,
 #contact-links-bottom a {
     font-size: 20px;
     transition: all .2s;
     font-weight: bold;
+    height: 70px;
+    width: 70px;
+}
+
+#contact-links .caption {
+    position: relative;
+    left: -90px;
+}
+
+#contact-links a {
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: -182px;
+    transition: all .5s ease;
+}
+
+#contact-links a:hover {
+    left: 0;
+}
+
+#contact-links a .left-side {
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    height: 70px;
+    width: 100%;
+}
+
+#contact-links a .right-side {
     height: 70px;
     width: 70px;
 }
@@ -57,29 +92,49 @@
     border-left: none;
 }
 
-#contact-links #facebook:hover,
+#contact-links #facebook:hover .left-side {
+    background-color: rgb(41, 127, 255);
+}
+
+#contact-links #github:hover .left-side {
+    background-color: rgb(138, 36, 255);
+}
+
+#contact-links #linkedin:hover .left-side {
+    background-color: rgb(57, 176, 255);
+}
+
+#contact-links #gmail:hover .left-side {
+    background-color: rgb(255, 80, 67);
+}
+
+#contact-links #facebook:hover .right-side,
 #contact-links-bottom #facebook:hover {
     background-color: rgb(0, 102, 255);
     border-color: rgb(0, 102, 255);
 }
 
-#contact-links #github:hover,
+#contact-links #github:hover .right-side,
 #contact-links-bottom #github:hover {
     background-color: rgb(95, 0, 204);
     border-color: rgb(95, 0, 204);
     color: #222;
 }
 
-#contact-links #linkedin:hover,
+#contact-links #linkedin:hover .right-side,
 #contact-links-bottom #linkedin:hover {
     background-color: rgb(20, 161, 255);
     border-color: rgb(20, 161, 255);
 }
 
-#contact-links #gmail:hover,
+#contact-links #gmail:hover .right-side,
 #contact-links-bottom #gmail:hover {
     background-color: rgb(248, 48, 34);
     border-color: rgb(248, 48, 34);
+}
+
+@media only screen and (min-width: 1500px) {
+
 }
 
 @media only screen and (max-width: 1000px) {
