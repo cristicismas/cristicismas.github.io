@@ -198,3 +198,9 @@
         right: 15px;
     }
 }
+
+@media only screen and (max-width: 534px) {
+    #projects .project .links .website-link {
+        min-width: 134px;
+    }
+}
