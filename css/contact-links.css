@@ -88,6 +88,10 @@
     border-top: none;
 }
 
+#contact-links-bottom {
+    margin-top: 150px;
+}
+
 #contact-links-bottom a:not(:first-child) {
     border-left: none;
 }

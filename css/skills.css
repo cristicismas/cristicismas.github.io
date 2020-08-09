@@ -1,0 +1,101 @@
+#skills {
+    padding: 0 150px 0;
+}
+
+#skills .title {
+    margin-bottom: 50px;
+}
+
+#skills .skills-lists {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#skills .sub-title {
+    font-size: 34px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#skills .skills-list {
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0;
+    font-size: 28px;
+}
+
+#skills .skill {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 15px 25px 15px 0;
+    transition: all .2s ease-in;
+    min-width: 350px;
+}
+
+#skills .frontend .skill:hover {
+    box-shadow: inset 500px 0 0 0 rgba(71, 172, 255, 0.2);
+}
+
+#skills .backend .skill:hover {
+  box-shadow: inset 500px 0 0 0 rgba(248, 75, 75, 0.4);
+}
+
+#skills .skill .icon {
+    width: 50px;
+    margin: 0 20px;
+}
+
+@media only screen and (max-width: 1450px) {
+    #skills {
+        margin-top: -70px;
+    }
+
+    #skills .title {
+        margin-bottom: 130px;
+    }
+
+    #skills .skills-lists {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #skills .skill {
+        margin: auto;
+        justify-content: flex-start;
+        min-width: 250px;
+    }
+
+    #skills .frontend .skill:hover,
+    #skills .backend .skill:hover {
+        box-shadow: none;
+    }
+
+    #skills .frontend {
+        margin-bottom: 150px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #skills {
+        margin-top: 50px;
+        padding: 30px;
+    }
+
+    #skills .title {
+        margin-bottom: 70px;
+    }
+
+    #skills .skill {
+        min-width: auto;
+    }
+
+    #skills .sub-title {
+        margin-bottom: 30px;
+    }
+    
+    #skills .frontend {
+        margin-bottom: 50px;
+    }
+}
