@@ -33,12 +33,8 @@
     min-width: 350px;
 }
 
-#skills .frontend .skill:hover {
-    box-shadow: inset 500px 0 0 0 rgba(71, 172, 255, 0.2);
-}
-
-#skills .backend .skill:hover {
-  box-shadow: inset 500px 0 0 0 rgba(248, 75, 75, 0.4);
+#skills .skill:hover {
+    background-color: #292929;
 }
 
 #skills .skill .icon {
