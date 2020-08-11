@@ -76,7 +76,14 @@
     #skills .skill {
         margin: auto;
         margin-bottom: 20px;
-        background-color: #292929;
+    }
+
+    #skills .skill .flex-container {
+        background-color: #1f1f1f;
+    }
+
+    #skills .skill:hover:after {
+        transform: scale(0);
     }
     
     #skills .skill:hover {
