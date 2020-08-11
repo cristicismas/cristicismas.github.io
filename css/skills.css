@@ -25,9 +25,22 @@
     font-size: 28px;
 }
 
-#skills .skill {
-    display: flex;
+#skills .skill:after {
+    z-index: 100;
+    content: '';
+    display: block;
+    border-bottom: 5px solid rgb(0, 140, 255);
+    transition: all .3s ease;
     margin-bottom: 30px;
+    transform: scaleX(0);  
+}
+
+#skills .skill:hover:after {
+    transform: scale(1);
+}
+
+#skills .skill .flex-container {
+    display: flex;
     padding: 15px 25px 15px 0;
     transition: all .1s ease-in;
     flex-direction: row-reverse;
@@ -37,9 +50,8 @@
     border: 5px solid transparent;
 }
 
-#skills .skill:hover {
-    background-color: #292929;
-    border-left: 5px solid rgb(0, 140, 255);
+#skills .skill .flex-container:hover {
+    background-color: #252525;
 }
 
 #skills .skill .icon {
