@@ -50,7 +50,7 @@
     border: 5px solid transparent;
 }
 
-#skills .skill .flex-container:hover {
+#skills .skill:hover .flex-container {
     background-color: #252525;
 }
 
