@@ -122,3 +122,14 @@
         margin-bottom: 50px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    #skills .skill {
+        margin-bottom: 0px;
+    }
+
+    #skills .skill .flex-container {
+        width: 80vw;
+        min-width: 0;
+    }
+}
