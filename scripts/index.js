@@ -1,5 +1,4 @@
 // Scrolldown Arrow
-
 scrolldownArrow = document.getElementById('scrolldown-arrow');
 
 scrolldownArrow.addEventListener('click', function (e) {
@@ -13,7 +12,6 @@ scrolldownArrow.addEventListener('click', function (e) {
 
 
 // AOS
-
 AOS.init({
     offset: 50,
     duration: 600,
@@ -25,7 +23,6 @@ AOS.init({
 
 
 // Typed.js
-
 const typedOptions = {
     strings: ['Hi!^500 I am a<br />web developer.^500\n<br /><br />I make useful web applications,<br />that grow businesses and bring new leads.'],
     typeSpeed: 15,
@@ -36,7 +33,6 @@ const typed = new Typed('.description', typedOptions);
 
 
 // Contact links
-
 contactLinks = document.getElementById('contact-links');
 contactLinksBottom = document.getElementById('contact-links-bottom');
 
@@ -68,6 +64,5 @@ window.onscroll = function (e) {
 
 
 // Particles
-
 particlesJS.load('left', 'scripts/particlesjs-config.json');
 particlesJS.load('right', 'scripts/particlesjs-config.json');
